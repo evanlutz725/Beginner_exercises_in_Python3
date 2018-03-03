@@ -13,5 +13,5 @@ print (" ")
 if length==width:
 	print ("Not only is this a rectangle, it's also a square!")
 
-print ("Since the length of your square is", length, "feet, and the width of your square is", width, "feet,")
-print ("the total area of your square is", area, "feet.")
+print ("Since the length of your rectangle is", length, "feet, and the width of your rectangle is", width, "feet,")
+print ("the total area of your rectangle is", area, "feet.")

@@ -4,9 +4,9 @@
 print ("Let's calculate the area of a rectangle.")
 print ("This calculator only calculates in feet. Decimals are permitted.")
 
-length=float(input("How many feet long is the rectangle?"))
+length=float(input("How many feet long is the rectangle?" ))
 
-width=float(input("How many feet wide is the rectangle?"))
+width=float(input("How many feet wide is the rectangle?" ))
 
 area=width*length
 print (" ")

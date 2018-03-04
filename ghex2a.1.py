@@ -11,19 +11,19 @@ print ("Use grades A, B, C, D or F.")
 #While loop will cycle back to input until a valid input is attained
 while True:
 	Ge=input("What was your letter grade in Geometry? ")
-	if Ge in ('A','B','C','D','F'):
+	if Ge in grade_conv:
 		break
 	print ("Invalid Entry. Grade Must Be A, B, C, D, or F.")
 
 while True:
 	Al=input("What was your letter grade in Algebra? ")
-	if Al in ('A','B','C','D','F'):
+	if Al in grade_conv:
 		break
 	print ("Invalid Entry. Grade Must Be A, B, C, D, or F.")
 
 while True:
 	Ph=input("What was your letter grade in Physics? ")
-	if Ph in ('A','B','C','D','F'):
+	if Ph in grade_conv:
 		break
 	print ("Invalid Entry. Grade Must Be A, B, C, D, or F.")
 

@@ -1,47 +1,48 @@
 #Python3 Windows
 #Based on example 3 from https://github.com/py-study-group/beginner-friendly-programming-exercises/blob/master/exercises.md
 
-print ("We're going to do a calculation on how many bitcoin you bought,")
+print ("We're going to do a calculation on how many Bitcoin you bought,")
 print ("how much the value has increased, and the annual rate at which it grew!")
 
 #The while loop ensures only logical inputs can be provided
 #If not for the while loop, non-numerical strings could be entered that would break the program
 
 
-initial_quantity=0
-while initial_quantity<=0: #input must be a positive number to make any logical sense
-	try:
-		initial_quantity=float(input("How many Bitcoin did you buy initially?"))
+while True:
+#input must be a positive number to make any logical sense
+	initial_quantity=float(input("How many Bitcoin did you buy initially?"))
+	if initial_quantity>0:
 		break
-	except ValueError:
+	else:
 		print ("Invalid entry. Please enter a valid number.")
-	
 
-initial_value=0
-while initial_value<=0:
-	try:
-		initial_value=float(input("How much did you pay per Bitcoin?"))
+
+
+while True:
+	initial_value=float(input("How much did you pay per Bitcoin?"))
+	if initial_value>0:
 		break
-	except ValueError:
+	else:
 		print ("Invalid entry. Please enter a valid number.")
 		
 
-current_value=0
-while current_value<=0:
-	try:
-		current_value=input("How much is one Bitcoin worth today?")
+
+while True:
+	current_value=float(input("How much is one Bitcoin worth today?"))
+	if current_value>0:
 		break
-	except ValueError:
+	else:
 		print ("Invalid entry. Please enter a valid number.")
 		
 
-growth_time=0
-while growth_time<=0:
-	try:
-		growth_time=input("How many months ago did you buy your Bitcoin?")
+
+while True:
+	growth_time=float(input("How many months ago did you buy your Bitcoin?"))
+	if growth_time>0:
 		break
-	except ValueError:
+	else:
 		print ("Invalid entry. Please enter a valid number.")
+		
 		
 		
 initial_total=float(initial_quantity)*float(initial_value)

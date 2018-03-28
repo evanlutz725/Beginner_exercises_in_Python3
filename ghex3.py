@@ -9,7 +9,7 @@ print ("how much the value has increased, and the annual rate at which it grew!"
 
 
 while True:
-#input must be a positive number to make any logical sense
+#input must be a positive number to make any logical sense, but does not correct for string entries.
 	initial_quantity=float(input("How many Bitcoin did you buy initially?"))
 	if initial_quantity>0:
 		break

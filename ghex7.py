@@ -10,6 +10,7 @@ employee=input("What is the name of the employee who's weekly pay is being calcu
 
 print("How many years has", employee, "worked at XYZ Inc.? ")
 while True:
+	#this is one way to do this flow control
 	try:
 		years=float(input())
 		if years>0:
@@ -21,12 +22,14 @@ while True:
 
 print ("How many children does", employee, "have?")		
 while True:
+	#this is the other way: one less line
 	try:
 		children=int(input())
 		if children>=0:
 			break
-		else:	
-			print ("Please enter a valid number.")
+		#Without raise ValueError, the program recycles to the input again without any user feedback.
+		#This only happens if there is a negative input. 
+		raise ValueError
 	except ValueError:
 		print ("Please enter a valid number.")
 	
